@@ -1,0 +1,18 @@
+<div class="container color-dark">
+<div class="col">
+<p>
+  <strong>Bucketlist ( {{ itemCount }} )</strong>
+</p>
+</div>
+</div>
+
+<div class="container color-light" [@goals]="goals.length">
+
+<div class="col">
+<p class="life-container"  *ngFor="let goal of goals">
+    {{ goal }}
+  </p>
+<a href="" (click)="sendMeHome()"><input class="btn" type="submit" value="Back"></a>
+</div>
+
+</div>
